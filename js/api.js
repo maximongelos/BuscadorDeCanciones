@@ -14,10 +14,8 @@ class API {
 			.then((resultado) => {
 				const {lyrics} = resultado;
 
-				console.log(lyrics);
-
 				if (resultado.lyrics) {
-					UI.resultado.textContent = lyrics;
+					UI.divResultado.textContent = lyrics;
 					UI.headingResultado.textContent = `Letra de la cancion: ${this.cancion} de ${this.artista}`;
 					console.log('Se ejecuto');
 				} else {
