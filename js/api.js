@@ -22,6 +22,11 @@ class API {
 					UI.divMensajes.textContent =
 						'La cancion no existe, prueba con otra busqueda.';
 					UI.divMensajes.classList.add('error');
+
+					setTimeout(() => {
+						UI.divMensajes.textContent = '';
+						UI.divMensajes.classList.remove('error');
+					}, 3000);
 				}
 			});
 	}
